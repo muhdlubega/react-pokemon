@@ -1,0 +1,108 @@
+.container{
+  margin: 0;
+    padding: 0;
+    background-color: #212529;
+    color: #ffff;
+    display: grid;
+    grid-gap: 20px;
+}
+
+@media (min-width: 400px) {
+  .container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 600px) {
+  .container { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 800px) {
+  .container { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1000px) {
+  .container { grid-template-columns: repeat(5, 1fr); }
+}
+@media (min-width: 1200px) {
+  .container { grid-template-columns: repeat(6, 1fr); }
+}
+@media (min-width: 1400px) {
+  .container { grid-template-columns: repeat(7, 1fr); }
+}
+@media (min-width: 1600px) {
+  .container { grid-template-columns: repeat(8, 1fr); }
+}
+
+.header{
+  height:250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+margin: -35px;
+position: sticky;
+z-index: 10;
+top:50%;
+text-align: center;
+  float: none;
+  /* set gif as header background for better style and overall more striking appearance of webpage*/
+  background:url("https://thumbs.gfycat.com/DazzlingUnitedIrukandjijellyfish-size_restricted.gif");
+}
+.title{
+  font-size: 18vw;
+  margin-bottom: 0.4125vw;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #c8cad7;
+  font-family: "Impact", "Helvetica";
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 50%;
+  -webkit-text-stroke-color: #670202;
+    -webkit-text-stroke-width: 8px;
+}
+
+.main-image{
+  display:inline-block;
+  height: 500px;
+}
+.poke-image{
+  display:inline-block;
+  height: 100px;
+  cursor: pointer;
+  padding: 10px;
+  padding-top: 50px;
+}
+.poke-image:hover{
+  transform: scale(1.5);
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+}
+.poke-group{
+  display:inline-block;
+  width:100%;
+  text-align:center;
+}
+
+
+.details{
+  margin: 0;
+    padding: 0;
+    background-color: #212529;
+    color: #ffff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+  font-size: 100%;
+  text-align: left;
+  font-family: "Helvetica";
+  text-transform: uppercase;
+  top: 0%;
+  padding: 0px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
